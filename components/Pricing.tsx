@@ -12,8 +12,7 @@ const plans: PricingPlan[] = [
       "24/7 Coverage",
       "Native Scottish Accent",
       "Instant SMS Summaries",
-      "Custom Welcome Message",
-      "Custom Scripting"
+      "Custom Welcome Message"
     ]
   },
   {
@@ -36,6 +35,8 @@ const plans: PricingPlan[] = [
     price: "Custom",
     features: [
       "500+ Minutes per Month",
+      "24/7 Coverage",
+      "Native Scottish Accent",
       "Full Custom AI Build",
       "Custom Voice & Tone Tuning",
       "Custom Welcome Message",
@@ -83,8 +84,8 @@ const Pricing: React.FC<PricingProps> = ({ onSelectPlan }) => {
            </div>
         </div>
 
-        {/* Desktop Grid Layout */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+        {/* Desktop Grid Layout - Removed items-start to allow stretching */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan) => (
              <PricingCard key={plan.id} plan={plan} onSelectPlan={onSelectPlan} />
           ))}
@@ -110,7 +111,7 @@ interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({ plan, onSelectPlan, isMobile }) => {
   return (
     <div 
-      className={`relative rounded-2xl border flex flex-col p-8 bg-white transition-all duration-300 ${
+      className={`relative rounded-2xl border flex flex-col p-8 bg-white transition-all duration-300 h-full ${
         plan.popular 
           ? 'border-scotBlue shadow-xl z-10' 
           : 'border-gray-200 shadow-sm hover:shadow-md'
