@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Mobile Responsiveness */
+  @media only screen and (max-width: 600px) {
+    .main-table { width: 100% !important; }
+    .mobile-pad { padding: 20px !important; }
+    .receipt-label { display: block; width: 100%; margin-bottom: 2px; color: #6b7280; }
+    .receipt-value { display: block; width: 100%; margin-bottom: 15px; font-weight: 500; }
+  }
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f3f4f6; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+
+  <table class="main-table" border="0" cellpadding="0" cellspacing="0" width="600" style="margin: 40px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e5e7eb;">
+    
+    <tr>
+      <td bgcolor="#005EB8" style="padding: 30px; text-align: center;">
+         <img src="https://your-project-name.vercel.app/logo.png" alt="NessDial" width="80" style="background-color: white; border-radius: 8px; padding: 5px; display: block; margin: 0 auto;">
+      </td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#ecfdf5" style="padding: 15px; text-align: center; border-bottom: 1px solid #d1fae5;">
+        <p style="margin: 0; color: #047857; font-weight: bold; font-size: 14px;">&#10003; Payment Received Successfully</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="mobile-pad" style="padding: 40px 50px;">
+        <h1 style="color: #0B1C3E; font-size: 24px; margin-top: 0;">Thanks, {{firstName}}!</h1>
+        <p style="color: #4b5563; font-size: 16px; line-height: 1.5;">
+          Your subscription is now active. We have started configuring your AI agent based on the form data you provided below.
+        </p>
+
+        <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 25px; margin: 30px 0;">
+          <h3 style="margin: 0 0 20px 0; color: #111827; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px;">
+            Agent Configuration Details
+          </h3>
+          
+          <table width="100%" cellpadding="5" border="0" style="border-collapse: collapse;">
+            
+            <tr>
+              <td width="35%" style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Full Name:</strong></td>
+              <td width="65%" style="color: #111827; font-size: 14px; padding-bottom: 8px;">{{firstName}} {{lastName}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Business Name:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px;">{{businessName}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Tier:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px;">
+                <span style="background-color: #dbeafe; color: #1e40af; padding: 2px 8px; border-radius: 12px; font-size: 12px; font-weight: bold;">{{selectedTier}}</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Email:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px;">{{email}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Business Phone:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px;">{{businessPhone}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 15px;"><strong>Location:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 15px;">{{location}}</td>
+            </tr>
+
+            <tr>
+              <td colspan="2" style="border-top: 1px dashed #d1d5db; padding-top: 15px;"></td>
+            </tr>
+
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Operating Days:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px;">{{operatingDays}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Service Prices:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px; line-height: 1.4;">{{servicePrices}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Common FAQs:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px; line-height: 1.4;">{{faqs}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Description:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px; line-height: 1.4;">{{businessDescription}}</td>
+            </tr>
+            <tr>
+              <td style="color: #6b7280; font-size: 13px; vertical-align: top; padding-bottom: 8px;"><strong>Extra Notes:</strong></td>
+              <td style="color: #111827; font-size: 14px; padding-bottom: 8px; line-height: 1.4;">{{message}}</td>
+            </tr>
+
+          </table>
+        </div>
+
+        <p style="color: #4b5563; font-size: 16px;">
+          <strong>Next Steps:</strong><br>
+          We are now verifying your script and phone routing instructions. We aim to email you within <strong>24 hours</strong> when your agent is ready to take calls.
+        </p>
+        
+        <p style="color: #4b5563; font-size: 14px; margin-top: 20px; background-color: #fff7ed; padding: 15px; border-left: 4px solid #f97316; border-radius: 4px;">
+          <strong>Need to change something?</strong><br>
+          If you spot an error in the details above, please reply to this email immediately so we can update your agent's instructions before deployment.
+        </p>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#0B1C3E" style="padding: 20px; text-align: center; color: #9ca3af; font-size: 12px;">
+        <p style="margin: 0;">&copy; 2026 NessDial. Built in Scotland.</p>
+        <p style="margin: 5px 0 0 0;">Aberdeen, United Kingdom | 07986 019065</p>
+        <p style="margin: 15px 0 0 0; border-top: 1px solid #374151; padding-top: 15px;">
+           <a href="mailto:nessdialai@gmail.com" style="color: #ffffff; text-decoration: none;">nessdialai@gmail.com</a>
+        </p>
+        <p style="margin: 5px 0 0 0;">
+          Cancellation Policy: Monthly rolling contract. Email us at nessdialai@gmail.com to cancel anytime.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
