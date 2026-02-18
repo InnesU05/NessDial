@@ -7,8 +7,12 @@ const faqs = [
     a: "Not at all. We use advanced voice synthesis that includes natural pauses, 'ums' and 'ahs'. Our Standard tier specifically offers high-quality Scottish accents trained on local dialects."
   },
   {
-    q: "How does the appointment booking work?",
-    a: "We connect the AI to your Google Calendar or booking software (like Calendly). The AI sees your availability in real-time and books slots directly. You just get a notification."
+    q: "How long does setup take?",
+    a: "It takes just a few minutes. Once you receive your AI agent details from us, you simply follow a short instruction to sync it with your business number. We handle all the complex building and testing for you."
+  },
+  {
+    q: "Can I keep my existing phone number?",
+    a: "Yes, absolutely. You don't need to change your number. You simply set up a call divert (we show you how) so that calls go to your NessDial agent whenever you are busy, on another line, or out of hours."
   },
   {
     q: "What happens if the AI doesn't know the answer?",

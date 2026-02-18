@@ -34,8 +34,7 @@ const DemoSection: React.FC = () => {
                 <div className="absolute -top-4 -left-4 bg-scotBlue text-white text-xs font-bold px-3 py-1 rounded-full z-20 shadow-lg">
                     WATCH DEMO
                 </div>
-                {/* 
-                  VIDEO TAG INSTRUCTIONS:
+                {/* VIDEO TAG INSTRUCTIONS:
                   1. Name your video file 'demo.mp4'.
                   2. Place 'demo.mp4' in the 'public' folder of this project.
                   3. If the video fails to load, the 'poster' image will show instead.
@@ -74,7 +73,7 @@ const DemoSection: React.FC = () => {
             <div className="space-y-4 md:space-y-6">
                 {/* Row 1 */}
                 <div className="flex items-center justify-between border-b border-gray-100 pb-3 md:pb-4">
-                    <div className="w-5/12 pr-2">
+                    <div className="w-1/2 md:w-5/12 pr-2">
                         <p className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Standard Voicemail</p>
                         <div className="flex items-center text-red-500 font-bold bg-red-50 inline-flex px-2 py-1 rounded text-xs md:text-base">
                             <XCircle className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-1.5" />
@@ -82,7 +81,7 @@ const DemoSection: React.FC = () => {
                         </div>
                     </div>
                     
-                    <div className="w-7/12 pl-2 text-right border-l border-gray-100">
+                    <div className="w-1/2 md:w-7/12 pl-2 text-right border-l border-gray-100">
                         <p className="text-[10px] md:text-xs font-bold text-scotBlue uppercase tracking-wider mb-1">NessDial Agent</p>
                         <div className="flex items-center justify-end text-green-700 font-bold bg-green-50 inline-flex px-2 py-1 rounded text-xs md:text-base">
                             Answers Instantly
@@ -93,12 +92,12 @@ const DemoSection: React.FC = () => {
 
                 {/* Row 2 */}
                 <div className="flex items-center justify-between border-b border-gray-100 pb-3 md:pb-4">
-                    <div className="w-5/12 pr-2">
+                    <div className="w-1/2 md:w-5/12 pr-2">
                         <p className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Booking</p>
                         <p className="text-xs md:text-sm text-gray-600 font-medium">Phone tag. Missed opportunities.</p>
                     </div>
                     
-                    <div className="w-7/12 pl-2 text-right border-l border-gray-100">
+                    <div className="w-1/2 md:w-7/12 pl-2 text-right border-l border-gray-100">
                         <p className="text-[10px] md:text-xs font-bold text-scotBlue uppercase tracking-wider mb-1">Booking</p>
                         <p className="text-xs md:text-sm text-gray-900 font-bold">Books job directly into diary.</p>
                     </div>
@@ -106,12 +105,12 @@ const DemoSection: React.FC = () => {
 
                  {/* Row 3 */}
                  <div className="flex items-center justify-between">
-                    <div className="w-5/12 pr-2">
+                    <div className="w-1/2 md:w-5/12 pr-2">
                         <p className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Impression</p>
                         <p className="text-xs md:text-sm text-gray-600 font-medium">"They're too busy for me."</p>
                     </div>
                     
-                    <div className="w-7/12 pl-2 text-right border-l border-gray-100">
+                    <div className="w-1/2 md:w-7/12 pl-2 text-right border-l border-gray-100">
                         <p className="text-[10px] md:text-xs font-bold text-scotBlue uppercase tracking-wider mb-1">Impression</p>
                         <p className="text-xs md:text-sm text-gray-900 font-bold">"Wow, that was professional."</p>
                     </div>

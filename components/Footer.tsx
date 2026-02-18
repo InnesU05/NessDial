@@ -60,7 +60,7 @@ const Footer: React.FC<FooterProps> = ({ onGetStarted, onNavigate }) => {
               </li>
               <li className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <a href="tel:07986019065" className="hover:text-white transition-colors">07986 019065</a>
+                <a href="tel:07401236302" className="hover:text-white transition-colors">07401236302</a>
               </li>
               <li className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />

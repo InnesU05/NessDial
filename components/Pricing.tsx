@@ -12,7 +12,7 @@ const plans: PricingPlan[] = [
       "24/7 Coverage",
       "Native Scottish Accent",
       "Instant SMS Summaries",
-      "Email Notifications",
+      "Custom Welcome Message",
       "Custom Scripting"
     ]
   },
@@ -26,7 +26,7 @@ const plans: PricingPlan[] = [
       "24/7 Coverage",
       "Native Scottish Accent",
       "Instant SMS Summaries",
-      "Appointment Booking",
+      "Custom Welcome Message",
       "Priority Email Support"
     ]
   },
@@ -38,8 +38,7 @@ const plans: PricingPlan[] = [
       "500+ Minutes per Month",
       "Full Custom AI Build",
       "Custom Voice & Tone Tuning",
-      "Complex Call Routing",
-      "CRM Integration (HubSpot, etc)",
+      "Custom Welcome Message",
       "Priority Phone Support"
     ]
   }

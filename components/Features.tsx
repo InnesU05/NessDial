@@ -9,8 +9,8 @@ const features = [
   },
   {
     icon: Calendar,
-    title: "Verbal Booking",
-    description: "Books jobs directly into diary."
+    title: "Lead Qualification",
+    description: "Captures client details and job urgency."
   },
   {
     icon: MessageSquare,

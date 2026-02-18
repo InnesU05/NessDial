@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onDemoClick }) => {
               Your Business Needs a <span className="text-scotBlue">Voice</span>, Not Just a Voicemail.
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Real AI voice agents that <strong>talk</strong> to your customers. We answer calls, qualify leads, and book jobs 24/7 with a friendly Scottish accent.
+              Real AI voice agents that <strong>talk</strong> to your customers. We answer calls, qualify leads, and ensure you never miss a client 24/7 with a friendly Scottish accent.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
