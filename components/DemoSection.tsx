@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, XCircle, ArrowDown } from 'lucide-react';
+import { CheckCircle2, XCircle } from 'lucide-react';
 
 const DemoSection: React.FC = () => {
   return (
@@ -12,7 +12,6 @@ const DemoSection: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center px-4 py-1 rounded-full bg-scotBlue/20 text-blue-200 text-sm font-bold mb-4 border border-scotBlue/30">
-             <ArrowDown className="w-4 h-4 mr-1" />
              Never Miss Another Lead
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold mb-4 md:mb-6 tracking-tight">
@@ -93,13 +92,13 @@ const DemoSection: React.FC = () => {
                 {/* Row 2 */}
                 <div className="flex items-center justify-between border-b border-gray-100 pb-3 md:pb-4">
                     <div className="w-1/2 md:w-5/12 pr-2">
-                        <p className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Booking</p>
-                        <p className="text-xs md:text-sm text-gray-600 font-medium">Phone tag. Missed opportunities.</p>
+                        <p className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Lead Qualification</p>
+                        <p className="text-xs md:text-sm text-gray-600 font-medium">Lead lost.</p>
                     </div>
                     
                     <div className="w-1/2 md:w-7/12 pl-2 text-right border-l border-gray-100">
-                        <p className="text-[10px] md:text-xs font-bold text-scotBlue uppercase tracking-wider mb-1">Booking</p>
-                        <p className="text-xs md:text-sm text-gray-900 font-bold">Books job directly into diary.</p>
+                        <p className="text-[10px] md:text-xs font-bold text-scotBlue uppercase tracking-wider mb-1">Lead Qualification</p>
+                        <p className="text-xs md:text-sm text-gray-900 font-bold">Info gathered, lead qualified.</p>
                     </div>
                 </div>
 
