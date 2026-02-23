@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NessDial AI | Scottish Business Receptionists</title>
+    
+    <title>NessDial | AI Voice Agents & Receptionists for Scottish Businesses</title>
+    <meta name="description" content="Stop losing leads to voicemail. NessDial provides AI voice agents with authentic Scottish accents for trades and small businesses across Scotland. 24/7 call answering." />
+    <meta name="keywords" content="AI voice agent Scotland, AI receptionist UK, Scottish AI phone answering, AI for tradesmen, NessDial, Aberdeen AI company, automated phone system Scotland" />
+    <link rel="canonical" href="https://nessdial.co.uk/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nessdial.co.uk/" />
+    <meta property="og:title" content="NessDial | AI Voice Agents for Scottish Businesses" />
+    <meta property="og:description" content="Never miss a lead. Our AI voice agents speak with a natural Scottish accent, answering calls 24/7 for trades and small businesses." />
+    <meta property="og:image" content="https://nessdial.co.uk/logo.png" />
+    <meta property="og:locale" content="en_GB" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NessDial | AI Voice Receptionists for Scotland" />
+    <meta name="twitter:description" content="Capture every lead 24/7 with a Scottish AI voice agent built for tradesmen and small businesses." />
+    <meta name="twitter:image" content="https://nessdial.co.uk/logo.png" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "NessDial AI Voice Agent",
+      "operatingSystem": "Web, iOS, Android",
+      "applicationCategory": "BusinessApplication",
+      "description": "Premium AI Voice Receptionists tailored for Scottish trades and small businesses. Real conversations, Scottish accents, zero lost leads.",
+      "offers": {
+        "@type": "Offer",
+        "price": "39.00",
+        "priceCurrency": "GBP"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "NessDial",
+        "url": "https://nessdial.co.uk",
+        "logo": "https://nessdial.co.uk/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+44-7401-236302",
+          "contactType": "customer service",
+          "email": "nessdialai@gmail.com",
+          "areaServed": "Scotland"
+        },
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Aberdeen",
+            "addressRegion": "Scotland",
+            "addressCountry": "UK"
+          }
+        }
+      }
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
             colors: {
-              scotBlue: '#005EB8', // Scotland Flag Blue
-              scotDark: '#0B1C3E', // Deep Navy
-              scotLight: '#E1E8F0', // Light Blue/Grey
+              scotBlue: '#005EB8',
+              scotDark: '#0B1C3E',
+              scotLight: '#E1E8F0',
             }
           }
         }
       }
     </script>
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        scroll-behavior: smooth;
-      }
+      body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "vite": "https://esm.sh/vite@^7.3.1",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "vite": "https://esm.sh/vite@^7.3.1",
+        "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
