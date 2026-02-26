@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @media only screen and (max-width: 600px) {
+    .main-table { width: 100% !important; }
+    .mobile-pad { padding: 20px !important; }
+  }
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f3f4f6; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+
+  <table class="main-table" border="0" cellpadding="0" cellspacing="0" width="600" style="margin: 40px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e5e7eb;">
+    
+    <tr>
+      <td bgcolor="#005EB8" style="padding: 30px; text-align: center;">
+         <img src="https://nessdial.co.uk/logo.png" alt="NessDial" width="80" style="background-color: white; border-radius: 8px; padding: 5px; display: block; margin: 0 auto;">
+      </td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#ecfdf5" style="padding: 15px; text-align: center; border-bottom: 1px solid #d1fae5;">
+        <p style="margin: 0; color: #047857; font-weight: bold; font-size: 14px;">🚀 Your AI Agent is Live & Ready to Take Calls!</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="mobile-pad" style="padding: 40px 50px;">
+        <h1 style="color: #0B1C3E; font-size: 24px; margin-top: 0;">Great news, [First Name]!</h1>
+        
+        <div style="background-color: #fef08a; padding: 15px; border-radius: 6px; border-left: 4px solid #eab308; margin-bottom: 25px;">
+          <p style="margin: 0; color: #854d0e; font-size: 14px; font-weight: bold;">⚠️ IMPORTANT: Please save or star this email for future reference. It contains your AI phone number and vital setup instructions.</p>
+        </div>
+
+        <p style="color: #4b5563; font-size: 16px; line-height: 1.6;">
+          Our development team has finished configuring the AI receptionist for <strong>[Business Name]</strong>. Your agent has been trained on your specific business details, pricing, and FAQs. It is fully operational and ready to start answering your customers right now.
+        </p>
+
+        <div style="background-color: #eff6ff; border: 2px dashed #005EB8; border-radius: 8px; padding: 30px; text-align: center; margin: 35px 0;">
+          <p style="margin: 0 0 10px 0; color: #1e3a8a; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Your Dedicated AI Phone Number</p>
+          <p style="margin: 0; color: #0B1C3E; font-size: 30px; font-weight: 900; letter-spacing: 2px;">
+            [INSERT AI PHONE NUMBER HERE]
+          </p>
+          <p style="margin: 15px 0 0 0; color: #3b82f6; font-size: 14px;">
+            <em>Go ahead, give it a call right now to test it out!</em>
+          </p>
+        </div>
+
+        <h2 style="color: #0B1C3E; font-size: 20px; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; margin-top: 40px;">Final Step: Connecting Your Phones</h2>
+        
+        <p style="color: #4b5563; font-size: 16px; line-height: 1.6;">
+          To ensure your AI agent can catch the calls you miss, you need to set up <strong>Call Forwarding</strong> on your current business phone system. We recommend setting it up so that calls forward to your new AI number <em>only</em> if the call is missed, or after 15 seconds of ringing.
+        </p>
+
+        <div style="text-align: center; margin: 30px 0;">
+          <a href="https://nessdial.co.uk/setup.html" style="background-color: #005EB8; color: #ffffff; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(0, 94, 184, 0.3);">
+            View the Call Forwarding Setup Guide &rarr;
+          </a>
+        </div>
+
+        <h2 style="color: #0B1C3E; font-size: 20px; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; margin-top: 40px;">Support & Tweaks</h2>
+        
+        <p style="color: #4b5563; font-size: 16px; line-height: 1.6;">
+          As you test your agent, you might realize you want it to say something slightly differently, or add a new FAQ it doesn't know yet. We include ongoing prompt tweaks in your subscription!
+        </p>
+        
+        <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; margin-top: 15px;">
+          <p style="margin: 0; color: #4b5563; font-size: 15px;">
+            For updates, script changes, or technical support, please email us directly at: <br><br>
+            <a href="mailto:nessdialai@gmail.com" style="color: #005EB8; font-weight: bold; font-size: 18px;">nessdialai@gmail.com</a>
+          </p>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #e5e7eb; margin: 40px 0 20px 0;">
+
+        <h3 style="color: #111827; font-size: 16px; margin-bottom: 10px;">Subscription & Cancellation Policy</h3>
+        <p style="color: #4b5563; font-size: 14px; line-height: 1.5; margin-top: 0;">
+          NessDial is a rolling monthly subscription with no lock-in contracts. You can view your billing history or cancel your subscription at any time using our automated portal:
+          <br><br>
+          <a href="bpc_1T56ysQ985l1hit345q2ZPV8" style="color: #005EB8; font-weight: bold; text-decoration: underline;">Access Secure Billing Portal</a>
+          <br><br>
+          Alternatively, if you require assistance, you may email your cancellation request to <a href="mailto:nessdialai@gmail.com" style="color: #005EB8;">nessdialai@gmail.com</a>.
+        </p>
+
+        <div style="background-color: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0;">
+          <p style="margin: 0; color: #991b1b; font-size: 13px; font-weight: bold;">
+            CRITICAL: Before cancelling, you MUST disable conditional call forwarding on your personal device using the steps in the setup guide. If you do not disable forwarding, your customers' calls will continue to be routed to a disconnected number.
+          </p>
+        </div>
+
+        <p style="color: #6b7280; font-size: 12px; line-height: 1.5; margin-top: 30px;">
+          By using our services, you agree to our 
+          <a href="https://nessdial.co.uk/terms.html" style="color: #005EB8; text-decoration: underline;">Terms & Conditions</a> and 
+          <a href="https://nessdial.co.uk/privacy.html" style="color: #005EB8; text-decoration: underline;">Privacy Policy</a> 
+          (available at the bottom of our website).
+        </p>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#0B1C3E" style="padding: 20px; text-align: center; color: #9ca3af; font-size: 12px; line-height: 1.6;">
+        <p style="margin: 0;">&copy; 2026 NessDial. Built in Scotland.</p>
+        <p style="margin: 5px 0 0 0;">Aberdeen, United Kingdom</p>
+        <p style="margin: 15px 0 0 0; color: #1e3a8a;">Support Line: +44 7401 236302</p>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
