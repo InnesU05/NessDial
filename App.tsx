@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
@@ -77,6 +78,7 @@ const App: React.FC = () => {
       {currentView === 'privacy' && (
         <LegalDoc type="privacy" onBack={() => setCurrentView('home')} />
       )}
+      <Analytics />
     </div>
   );
 };
