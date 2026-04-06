@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, XCircle } from 'lucide-react';
+import { CheckCircle2, XCircle, Phone } from 'lucide-react';
 
 const DemoSection: React.FC = () => {
   return (
@@ -9,6 +9,26 @@ const DemoSection: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
+        {/* Call Demo Bar */}
+        <div className="mb-12 bg-scotBlue/10 border border-scotBlue/30 rounded-2xl p-5 md:p-6 shadow-lg backdrop-blur-sm transition-all hover:bg-scotBlue/20">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="bg-scotBlue p-3 rounded-full flex-shrink-0 shadow-lg shadow-scotBlue/50 animate-pulse">
+              <Phone className="w-6 h-6 text-white fill-current" />
+            </div>
+            <div className="text-center sm:text-left">
+              <p className="text-lg md:text-xl font-bold text-white mb-1">
+                Want to hear a NessDial agent for yourself?
+              </p>
+              <p className="text-sm md:text-base text-blue-200">
+                Call our live demo right now: 
+                <a href="tel:+447401236302" className="text-white font-black tracking-wider hover:underline ml-2">
+                  +44 7401 236302
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center px-4 py-1 rounded-full bg-scotBlue/20 text-blue-200 text-sm font-bold mb-4 border border-scotBlue/30">
@@ -41,10 +61,10 @@ const DemoSection: React.FC = () => {
                 <div className="relative w-full rounded-xl overflow-hidden bg-black border border-gray-600 aspect-video">
                     <video 
                       controls 
+                      preload="metadata"
                       className="w-full h-full object-cover"
-                      poster="https://images.unsplash.com/photo-1621360841012-d768d2b271d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                     >
-                      <source src="/demo.mp4" type="video/mp4" />
+                      <source src="/demo.mp4#t=0.001" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                 </div>
