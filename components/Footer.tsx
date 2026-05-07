@@ -1,12 +1,11 @@
-import React from 'react';
 import { Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
 
 interface FooterProps {
   onGetStarted?: () => void;
-  onNavigate: (view: 'home' | 'pricing' | 'demo' | 'features' | 'terms' | 'privacy') => void;
+  onNavigate: (view: 'home' | 'services' | 'demo' | 'features' | 'about' | 'quote' | 'terms' | 'privacy') => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ onGetStarted, onNavigate }) => {
+export default function Footer({ onGetStarted, onNavigate }: FooterProps) {
   return (
     <footer className="bg-slate-900 text-white pt-8 md:pt-16 pb-8 relative">
        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
@@ -42,10 +41,10 @@ const Footer: React.FC<FooterProps> = ({ onGetStarted, onNavigate }) => {
             <ul className="space-y-2 text-slate-400">
               <li><button onClick={() => onNavigate('home')} className="hover:text-blue-400 transition-colors">Home</button></li>
               <li><button onClick={() => onNavigate('features')} className="hover:text-blue-400 transition-colors">Features</button></li>
-              <li><button onClick={() => onNavigate('pricing')} className="hover:text-blue-400 transition-colors">Pricing</button></li>
+              <li><button onClick={() => onNavigate('services')} className="hover:text-blue-400 transition-colors">Services</button></li>
               <li><button onClick={() => onNavigate('demo')} className="hover:text-blue-400 transition-colors">How it Works</button></li>
+              <li><button onClick={() => onNavigate('about')} className="hover:text-blue-400 transition-colors">About Us</button></li>
               <li><button onClick={() => onNavigate('terms')} className="hover:text-blue-400 transition-colors">Terms & Conditions</button></li>
-              <li><button onClick={() => onNavigate('privacy')} className="hover:text-blue-400 transition-colors">Privacy Policy</button></li>
             </ul>
           </div>
 
@@ -74,6 +73,4 @@ const Footer: React.FC<FooterProps> = ({ onGetStarted, onNavigate }) => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

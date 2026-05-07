@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Instagram, Linkedin, Code2, Wrench } from 'lucide-react';
 
