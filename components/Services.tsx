@@ -39,9 +39,18 @@ export default function Services({ onGetQuote }: { onGetQuote: () => void }) {
             </div>
             <div className="bg-slate-900/50 p-8 rounded-2xl border border-slate-700 text-center">
               <h4 className="text-xl font-bold mb-3">Ready to save hours of admin?</h4>
-              <p className="text-slate-400 mb-8 text-sm">
+              <p className="text-slate-400 mb-6 text-sm">
                 Fill out a brief form about your business, and we'll provide a custom strategy and quote within 24 hours.
               </p>
+              
+              {/* New Pricing Callout Box */}
+              <div className="bg-slate-800/80 rounded-xl p-4 mb-6 border border-slate-700">
+                <p className="text-slate-300 text-sm leading-relaxed">
+                  <span className="text-blue-400 font-bold block mb-1">Pricing Model</span>
+                  We typically operate on a simple monthly retainer, plus a small initial setup fee. No hidden costs.
+                </p>
+              </div>
+
               <button 
                 onClick={onGetQuote}
                 className="w-full inline-flex items-center justify-center px-6 py-4 text-base font-bold text-slate-900 bg-white rounded-xl hover:bg-blue-50 transition-all shadow-lg transform hover:-translate-y-0.5"

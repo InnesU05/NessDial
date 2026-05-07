@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
-import { ArrowLeft, Instagram, Linkedin, Code2, Wrench } from 'lucide-react';
+import { ArrowLeft, Instagram, Linkedin, User, Quote } from 'lucide-react';
 
 export default function About({ onBack }: { onBack: () => void }) {
   return (
     <div className="min-h-screen bg-slate-50 pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden selection:bg-blue-200">
-      {/* Ambient background styling */}
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[600px] h-[600px] bg-gradient-to-br from-blue-100 to-transparent rounded-full blur-3xl opacity-60 pointer-events-none"></div>
 
       <div className="max-w-4xl mx-auto relative z-10">
@@ -22,7 +21,6 @@ export default function About({ onBack }: { onBack: () => void }) {
           transition={{ duration: 0.6 }}
           className="bg-white rounded-[2rem] shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden"
         >
-          {/* Header Section */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 px-8 py-12 md:px-16 md:py-16 text-white relative overflow-hidden">
             <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 relative z-10">
@@ -33,14 +31,13 @@ export default function About({ onBack }: { onBack: () => void }) {
             </p>
           </div>
 
-          {/* Story Section */}
           <div className="px-8 py-12 md:px-16 md:py-16 text-slate-700 text-lg leading-relaxed space-y-8">
             <p>
               Hi, I'm Innes. I'm an engineering student based in Aberdeen. Throughout my studies, I've always been fascinated by systems; how they work, where they bottleneck, and most importantly, how they can be optimised.
             </p>
             
-            <div className="flex items-start bg-slate-50 p-6 rounded-2xl border border-slate-100">
-              <Wrench className="w-8 h-8 text-blue-500 mr-4 shrink-0 mt-1" />
+            <div className="flex items-start bg-slate-50 p-6 md:p-8 rounded-2xl border border-slate-100">
+              <Quote className="w-8 h-8 text-blue-400 mr-4 shrink-0 mt-1 fill-blue-100" />
               <p className="text-slate-600 italic">
                 "I started noticing a recurring theme among local businesses in Scotland: business owners who were absolute masters of their craft, but were being weighed down by the administrative burden of chasing leads, following up with customers, and managing their online reputation."
               </p>
@@ -54,15 +51,13 @@ export default function About({ onBack }: { onBack: () => void }) {
             </p>
           </div>
 
-          {/* Founder Contact Section */}
           <div className="bg-slate-50 border-t border-slate-100 px-8 py-10 md:px-16">
             <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-              <Code2 className="w-6 h-6 mr-3 text-blue-600" />
+              <User className="w-6 h-6 mr-3 text-blue-600" />
               My Socials
             </h3>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* Instagram Card */}
               <a 
                 href="https://instagram.com/innes_u05" 
                 target="_blank" 
@@ -80,7 +75,6 @@ export default function About({ onBack }: { onBack: () => void }) {
                 </div>
               </a>
 
-              {/* LinkedIn Card */}
               <a 
                 href="https://linkedin.com/in/innes-urquhart" 
                 target="_blank" 

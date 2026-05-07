@@ -2,17 +2,17 @@ import { motion } from 'framer-motion';
 
 const steps = [
   {
-    number: '01',
+    number: '1',
     title: 'We map your process',
     description: 'We learn exactly how a customer moves through your business, from booking to payment, to find the perfect follow-up moments.'
   },
   {
-    number: '02',
+    number: '2',
     title: 'We build the engine',
     description: 'We connect your tools and build automated workflows behind the scenes. No new software for you to learn, no passwords to manage.'
   },
   {
-    number: '03',
+    number: '3',
     title: 'You collect reviews',
     description: 'When a job is done, our system automatically sends highly personalised, timed messages driving your clients straight to Google.'
   }
@@ -39,8 +39,11 @@ export default function HowItWorks() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative z-10"
             >
-              <div className="text-5xl font-extrabold text-blue-50 mb-4 tracking-tighter">
-                {step.number}
+              {/* Highly legible blue badge instead of faint text */}
+              <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 shadow-sm border border-blue-50">
+                <span className="text-2xl font-extrabold text-blue-600">
+                  {step.number}
+                </span>
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">{step.title}</h3>
               <p className="text-slate-600 leading-relaxed">{step.description}</p>
