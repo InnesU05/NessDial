@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Stats from './components/Stats';
 import Features from './components/Features';
 import DemoSection from './components/DemoSection';
 import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import RegisterForm from './components/RegisterForm';
 import { LegalDoc } from './components/LegalDocs';
@@ -32,7 +30,6 @@ const App: React.FC = () => {
 
     setCurrentView('home');
     
-    // Allow React to render home view first if we were on register/legal
     setTimeout(() => {
       let elementId = '';
       if (view === 'pricing') elementId = 'pricing';
@@ -49,19 +46,14 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-200">
       {currentView === 'home' && (
         <>
           <Navbar onNavigate={handleNavigate} />
-          <Hero 
-            onCtaClick={() => handleNavigate('pricing')} 
-            onDemoClick={() => handleNavigate('demo')}
-          />
-          <Stats />
-          <Features />
-          <DemoSection />
-          <Pricing onSelectPlan={handleSelectPlan} />
-          <FAQ />
+          <div id="home"><Hero /></div>
+          <div id="features"><Features /></div>
+          <div id="demo"><DemoSection /></div>
+          <div id="pricing"><Pricing onSelectPlan={handleSelectPlan} /></div>
           <Footer onNavigate={handleNavigate} onGetStarted={() => handleNavigate('pricing')} />
         </>
       )}
