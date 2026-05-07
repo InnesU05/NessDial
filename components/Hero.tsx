@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
-export default function Hero() {
+export default function Hero({ onGetQuote }: { onGetQuote: () => void }) {
+  const scrollToDemo = () => {
+    const el = document.getElementById('demo');
+    el?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-slate-50">
       {/* Ambient Tech Glow */}
@@ -24,11 +29,17 @@ export default function Hero() {
             We build bespoke automation workflows for service businesses. Turn every happy customer into a 5-star Google review and eliminate manual admin on autopilot.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-200 hover:shadow-xl transform hover:-translate-y-0.5">
-              Book a Free Strategy Call
+            <button 
+              onClick={onGetQuote}
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg shadow-blue-200 hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Request a Quote
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>
-            <button className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-all shadow-sm">
+            <button 
+              onClick={scrollToDemo}
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-all shadow-sm"
+            >
               See How It Works
             </button>
           </div>
