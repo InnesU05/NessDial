@@ -36,13 +36,13 @@ export default function About({ onBack }: { onBack: () => void }) {
           {/* Story Section */}
           <div className="px-8 py-12 md:px-16 md:py-16 text-slate-700 text-lg leading-relaxed space-y-8">
             <p>
-              Hi, I'm Innes. I'm an engineering student based in Aberdeen. Throughout my studies, I've always been fascinated by systems—how they work, where they bottleneck, and most importantly, how they can be optimised.
+              Hi, I'm Innes. I'm an engineering student based in Aberdeen. Throughout my studies, I've always been fascinated by systems; how they work, where they bottleneck, and most importantly, how they can be optimised.
             </p>
             
             <div className="flex items-start bg-slate-50 p-6 rounded-2xl border border-slate-100">
               <Wrench className="w-8 h-8 text-blue-500 mr-4 shrink-0 mt-1" />
               <p className="text-slate-600 italic">
-                "I started noticing a recurring theme among local businesses in our community: incredible tradespeople and business owners who were absolute masters of their craft, but were being weighed down by the administrative burden of chasing leads, following up with customers, and managing their online reputation."
+                "I started noticing a recurring theme among local businesses in Scotland: business owners who were absolute masters of their craft, but were being weighed down by the administrative burden of chasing leads, following up with customers, and managing their online reputation."
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function About({ onBack }: { onBack: () => void }) {
           <div className="bg-slate-50 border-t border-slate-100 px-8 py-10 md:px-16">
             <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
               <Code2 className="w-6 h-6 mr-3 text-blue-600" />
-              Connect with me
+              My Socials
             </h3>
             
             <div className="flex flex-col sm:flex-row gap-4">
