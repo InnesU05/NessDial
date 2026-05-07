@@ -50,9 +50,13 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-              <button className={`w-full py-3 px-6 rounded-lg font-medium transition-colors ${tier.popular ? 'bg-white text-blue-600 hover:bg-slate-50' : 'bg-blue-600 text-white hover:bg-blue-700'}`}>
-                Get Started
-              </button>
+              {/* Mailto link acts as a simple lead capture for now */}
+              <a 
+                href={`mailto:nessdialai@gmail.com?subject=Enquiry about the ${tier.name} Plan`} 
+                className={`block text-center w-full py-3 px-6 rounded-lg font-medium transition-colors ${tier.popular ? 'bg-white text-blue-600 hover:bg-slate-50' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
+              >
+                Enquire Now
+              </a>
             </motion.div>
           ))}
         </div>

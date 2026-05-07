@@ -5,21 +5,12 @@ import Features from './components/Features';
 import DemoSection from './components/DemoSection';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
-import RegisterForm from './components/RegisterForm';
 import { LegalDoc } from './components/LegalDocs';
-import { Tier } from './types';
 
-type ViewState = 'home' | 'register' | 'terms' | 'privacy';
+type ViewState = 'home' | 'terms' | 'privacy';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>('home');
-  const [selectedTier, setSelectedTier] = useState<Tier>(Tier.STANDARD);
-
-  const handleSelectPlan = (tier: Tier) => {
-    setSelectedTier(tier);
-    setCurrentView('register');
-    window.scrollTo(0, 0);
-  };
 
   const handleNavigate = (view: 'home' | 'pricing' | 'demo' | 'features' | 'terms' | 'privacy') => {
     if (view === 'terms' || view === 'privacy') {
@@ -53,13 +44,9 @@ const App: React.FC = () => {
           <div id="home"><Hero /></div>
           <div id="features"><Features /></div>
           <div id="demo"><DemoSection /></div>
-          <div id="pricing"><Pricing onSelectPlan={handleSelectPlan} /></div>
+          <div id="pricing"><Pricing /></div>
           <Footer onNavigate={handleNavigate} onGetStarted={() => handleNavigate('pricing')} />
         </>
-      )}
-
-      {currentView === 'register' && (
-        <RegisterForm selectedTier={selectedTier} onBack={() => setCurrentView('home')} />
       )}
 
       {currentView === 'terms' && (
